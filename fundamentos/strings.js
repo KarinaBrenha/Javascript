@@ -4,7 +4,7 @@ console.log(escola.charAt(5)) // nao gera erro, só nao aponta nenhum caracter
 
 console.log(escola.charAt(3)) // primeira leta é o indice 0
 
-console.log(escola.charCodeAt(3)) // valor na tabela unicode
+console.log(escola.charCodeAt(3)) // valor na tabela unicode.
 
 console.log(escola.indexOf('3'))
 

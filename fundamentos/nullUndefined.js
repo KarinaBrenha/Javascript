@@ -15,7 +15,7 @@ console.log(produto)
 
 produto.preco = undefined // evite atribuir undefined
 console.log(!!produto.preco)
-// delete produto.preco // se quer tirar o atributo declarado
+// delete produto.preco // se quer tirar o atributo declarado.
 console.log(produto)
 
 produto.preco = null // sem preço
