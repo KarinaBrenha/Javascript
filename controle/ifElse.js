@@ -8,4 +8,4 @@ imprimirResultado = function(nota) {
 
 imprimirResultado(10)
 imprimirResultado(4)
-imprimirResultado('Epa!')  // nesse caso é falso, cuidado pois js é fracamente tipado
+imprimirResultado('Epa!')  //nesse caso é falso, cuidado pois js é fracamente tipado
