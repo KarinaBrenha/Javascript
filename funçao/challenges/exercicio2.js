@@ -4,7 +4,7 @@ Crie uma função que recebe os comprimentos dos três lados de um triângulo e 
 ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
 triângulo). */
 
-
+// primeira opção
 // function medidas (a, b, c) {
 //     if (a === b && a === c) {
 //         console.log('Triângulo equilátero')
@@ -20,20 +20,28 @@ triângulo). */
 //     }
 // }
 
-function medidas(a, b, c) {
-    if (a === b && a === c){
-        console.log('Triângulo equilátero')
-    } 
-    else if ( a !== b && a !== c && b !== c){
-        console.log('Triângulo escaleno')
-    } else {
-        console.log('Triângulo isósceles')
-    }
+// segunda opção
+// function medidas(a, b, c) {
+//     if (a === b && a === c){
+//         console.log('Triângulo equilátero')
+//     } 
+//     else if ( a !== b && a !== c && b !== c){
+//         console.log('Triângulo escaleno')
+//     } else {
+//         console.log('Triângulo isósceles')
+//     }
+// }
+
+// terceira opção
+function medidas (a, b, c) {
+    if(a === b && a === c) return 'Triângulo equilátero';
+    if(a !== b && a !== c && b !== c) return 'Triângulo escaleno';
+    else return 'Triangulo isoceles';
 }
 
 
-medidas(2, 2, 2)
-medidas(2, 4, 2)
-medidas(2, 4, 6)
-medidas(4, 4, 6)
-medidas(2, 6, 6)
+console.log(medidas(2, 2, 2))
+console.log(medidas(2, 4, 2))
+console.log(medidas(2, 4, 6))
+console.log(medidas(4, 4, 6))
+console.log(medidas(2, 6, 6))
