@@ -5,7 +5,11 @@ const alunos = [
     {nome: 'Ana', nota: 8.7, bolsista: true}
 ];
 
+// somar todas as notas
+
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual) {
     console.log(acumulador, atual);
     return acumulador + atual;
 });
+
+console.log(resultado);
