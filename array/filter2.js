@@ -1,3 +1,15 @@
+
+Array.prototype.filter2 = function(callback) {
+    const newArray =[];
+    for (let i = 0; i < this.length; i++) {
+        if(callback(this[i], i, this)) {
+            newArray.push(this[i]);
+        }
+    }
+    return newArray;
+}
+
+
 const produtos = [
     {nome: 'Notebook', preco: 2499, fragil: true},
     {nome: 'ipad Pro', preco: 4199, fragil: true},
@@ -9,17 +21,4 @@ const seCaro = elemento => elemento.preco >= 500;
 
 const seFragil = elemento => elemento.fragil;
 
-console.log(produtos.filter(seCaro).filter(seFragil));
-
-// exemplos abaixo
-// console.log(produtos.filter(function(p) {
-//     return p.preco > 2500;
-// }))
-
-// console.log(produtos.filter(function(p1) {
-//     return false;
-// }))
-
-// console.log(produtos.filter(function(p2) {
-//     return p2.fragil === true;
-// }))
+console.log(produtos.filter2(seCaro).filter2(seFragil));
