@@ -1,6 +1,6 @@
 const nums = [1, 2, 3, 4, 5];
 
-// for com propódito
+// for com propósito
 let resultado = nums.map(function(elemento) {
     return elemento * 2;
 })
