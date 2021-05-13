@@ -5,9 +5,18 @@ removerVogais("Cod3r") // retornará "Cd3r"
 removerVogais("Fundamentos") // retornará "Fndmnts" */
 
 const removerVogais = string => {
-    let resultado = string.replace(/(a|e|i|o|u)/gi, '');
+    let resultado = string.replace(/(a|e|i|o|u)/ig, '');
     return resultado;
 }
 
+function removerVogais2(frase) {
+    const vogais = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+    vogais.forEach( vogal => frase = frase.replace(vogal, '') )
+    return frase
+    }
+
 console.log(removerVogais("Cod3r"));
 console.log(removerVogais("Fundamentos"));
+
+console.log(removerVogais2("Cod3r"));
+console.log(removerVogais2("Fundamentos"));
